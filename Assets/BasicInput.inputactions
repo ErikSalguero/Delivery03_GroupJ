@@ -1,0 +1,54 @@
+{
+    "name": "BasicInput",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "6d597f1c-a947-4ec6-aa6e-32fe1fd7411d",
+            "actions": [
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "7409550c-8381-433e-a864-5e54c0c4b612",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Exit",
+                    "type": "Button",
+                    "id": "4e8b1137-9d81-4e92-a536-fc46ed7d1872",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a2dd376b-e251-46aa-8e37-7be8ae2d22c0",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05645898-d718-4dcc-8355-0b15ac9c9bd5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
