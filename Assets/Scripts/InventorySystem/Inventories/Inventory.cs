@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ShopInventory", menuName = "Scriptable Objects/ShopInventory")]
-public class ShopInventory : ScriptableObject
+[CreateAssetMenu(fileName = "Inventory", menuName = "Scriptable Objects/Inventory")]
+public class Inventory : ScriptableObject
 {
     // NOTE: One slot can contain multiple items of one type
 
@@ -67,5 +67,4 @@ public class ShopInventory : ScriptableObject
     {
         return Slots[i];
     }
-
 }
