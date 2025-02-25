@@ -1062,6 +1062,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182170543}
   m_CullTransparentMesh: 0
+--- !u!1 &1289968049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289968051}
+  - component: {fileID: 1289968050}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1289968050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289968049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 156ded90431a2d74ea9c1604be596117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: {fileID: 11400000, guid: 01d035f09e9fd6e46a43efc4646d0b31, type: 2}
+  SlotPrefab: {fileID: 0}
+--- !u!4 &1289968051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289968049}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.081731655, y: -0.16334307, z: 0.034630433}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396346616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1617,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1718655707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718655705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460ae578d0a08fe4cb4a417f76423b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemData: {fileID: 11400000, guid: 06b8750e6297d7d4b972fea731e20a05, type: 2}
 --- !u!1 &1778100640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,7 +1884,7 @@ PrefabInstance:
     - target: {fileID: 5321002483811012434, guid: 590f0287e7093304b968e9555a0bfb16,
         type: 3}
       propertyPath: m_Name
-      value: Apple
+      value: ItemPrefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1835,6 +1894,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1718655706}
+    - targetCorrespondingSourceObject: {fileID: 5321002483811012434, guid: 590f0287e7093304b968e9555a0bfb16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1718655707}
   m_SourcePrefab: {fileID: 100100000, guid: 590f0287e7093304b968e9555a0bfb16, type: 3}
 --- !u!1 &1971635126
 GameObject:
@@ -2119,3 +2182,4 @@ SceneRoots:
   - {fileID: 44048510}
   - {fileID: 739552872}
   - {fileID: 1844550241}
+  - {fileID: 1289968051}

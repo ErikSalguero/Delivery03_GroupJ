@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class ConsumeItem : MonoBehaviour, IConsume
+public class ConsumeItem : MonoBehaviour
 {
-    public void Use(ConsumableItem item)
+    public void Use( ItemBase item)
     {
-        if (item is ItemPotion)
+        if (item.itemType != itemType.weapon )
         {
-            Debug.Log("Health Potion consumed");
+            Debug.Log("Item consumed");
         }
     }
 }

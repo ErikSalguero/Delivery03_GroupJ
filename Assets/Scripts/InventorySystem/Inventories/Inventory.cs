@@ -9,6 +9,7 @@ public class Inventory : ScriptableObject
 
     [SerializeField]
     List<ItemSlot> Slots;
+    List<ItemBase> ItemRecolected;
     public int Length => Slots.Count;
 
     public Action OnInventoryChange;
