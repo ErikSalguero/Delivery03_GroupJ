@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a3222f5b7e31c24396eca3e959c4b4d, type: 3}
+  m_Script: {fileID: 11500000, guid: dcb1eeaaf33b72044a36551400b399cb, type: 3}
   m_Name: Potion
   m_EditorClassIdentifier: 
   Name: 'Potion '
-  ImageUI: {fileID: 0}
-  IsStackable: 1
-  Cost: 60
-  HealthPoints: 30
+  itemType: 1
+  ImageUI: {fileID: -6028863088159424912, guid: 829cf6f9cc636ac4ca639a1278130d55,
+    type: 3}
+  IsStackable: 0
+  Cost: 0
+  restoreLife: 10
