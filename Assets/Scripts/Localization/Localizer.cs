@@ -17,26 +17,41 @@ public class Localizer : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        currentLanguage = DefaultLanguage;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        } //prob
+        //currentLanguage = DefaultLanguage;
+        currentLanguage = (Language)PlayerPrefs.GetInt("SelectedLanguage", (int)DefaultLanguage);//prob
 
         LoadLanguageSheet();
     }
 
     public static string GetText(string textKey)
     {
-        return Instance.Data[textKey].GetText(Instance.currentLanguage);
+        if (Instance.Data.ContainsKey(textKey))
+            return Instance.Data[textKey].GetText(Instance.currentLanguage);
+
+        return textKey;
     }
 
     public static void SetLanguage(Language language)
     {
         Instance.currentLanguage = language;
-
+        PlayerPrefs.SetInt("SelectedLanguage", (int)language);
+        PlayerPrefs.Save();
         OnLanguageChange?.Invoke();
     }
 
     void LoadLanguageSheet()
     {
+        Data = new Dictionary<string, LanguageData>();//prob
         string[] lines = DataSheet.text.Split(new char[] { '\n' });
 
         for (int i = 1; i < lines.Length; i++)
@@ -49,9 +64,11 @@ public class Localizer : MonoBehaviour
     {
         string[] entry = str.Split(new char[] { ';' });
 
+        if (entry.Length < 2) return;//prob
+
         var languageData = new LanguageData(entry);
 
-        if (Data == null) Data = new Dictionary<string, LanguageData>();
+        //if (Data == null) Data = new Dictionary<string, LanguageData>();
 
         Data.Add(entry[0], languageData);
     }
