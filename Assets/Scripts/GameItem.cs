@@ -1,25 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GameItem : MonoBehaviour
+public class GameItem : MonoBehaviour, ICanBePicked
 {
-    public ItemBase ItemData;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public ItemBase Item;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-     
+        // Get PlayerInventory component on Player gameObject
+        var picker = other.GetComponent<IPickUp>();
+
+        if (picker != null)
+        {
+            picker.PickUp(this); // Add to player inventory
+
+            PickedUp(); // Destroy game object from screen
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PickedUp()
     {
-        
+        Destroy(gameObject);
     }
 
-    public void SetData(ItemBase a)
+    public ItemBase GetItem()
     {
-        ItemData = a;
-        GetComponent<SpriteRenderer>().sprite = ItemData.ImageUI;
-
+        return Item;
     }
 }
