@@ -5,18 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Inventory", menuName = "Scriptable Objects/Inventory")]
 public class Inventory : ScriptableObject
 {
-    // NOTE: One slot can contain multiple items of one type
-
     [SerializeField]
     List<ItemSlot> Slots;
-    List<ItemBase> ItemRecolected;
     public int Length => Slots.Count;
 
     public Action OnInventoryChange;
 
     public void AddItem(ItemBase item)
     {
-        // Lazy initialization of slots list
         if (Slots == null) Slots = new List<ItemSlot>();
 
         var slot = GetSlot(item);

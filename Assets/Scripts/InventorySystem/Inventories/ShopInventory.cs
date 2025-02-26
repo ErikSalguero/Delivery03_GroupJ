@@ -1,8 +1,4 @@
-using System.Collections.Generic;
-using System;
 using UnityEngine;
-using UnityEditor.EditorTools;
-
 
 [CreateAssetMenu(fileName = "ShopInventory", menuName = "Scriptable Objects/ShopInventory")]
 public class ShopInventory : Inventory

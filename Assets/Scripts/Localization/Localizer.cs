@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Localizer : MonoBehaviour
 {
-    public static Localizer Instance; // Singleton instance of Localizer
+    public static Localizer Instance; 
 
-    public TextAsset DataSheet; // Unity text asset to be assigned (.csv)
+    public TextAsset DataSheet; 
 
-    Dictionary<string, LanguageData> Data; // Text data from CSV
+    Dictionary<string, LanguageData> Data; 
 
     private Language currentLanguage;
     public Language DefaultLanguage;
 
-    public static Action OnLanguageChange; // Change language event
+    public static Action OnLanguageChange; 
 
     private void Awake()
     {
@@ -26,9 +26,8 @@ public class Localizer : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-        } //prob
-        //currentLanguage = DefaultLanguage;
-        currentLanguage = (Language)PlayerPrefs.GetInt("SelectedLanguage", (int)DefaultLanguage);//prob
+        } 
+        currentLanguage = (Language)PlayerPrefs.GetInt("SelectedLanguage", (int)DefaultLanguage);
 
         LoadLanguageSheet();
     }
@@ -51,7 +50,7 @@ public class Localizer : MonoBehaviour
 
     void LoadLanguageSheet()
     {
-        Data = new Dictionary<string, LanguageData>();//prob
+        Data = new Dictionary<string, LanguageData>();
         string[] lines = DataSheet.text.Split(new char[] { '\n' });
 
         for (int i = 1; i < lines.Length; i++)
@@ -64,11 +63,9 @@ public class Localizer : MonoBehaviour
     {
         string[] entry = str.Split(new char[] { ';' });
 
-        if (entry.Length < 2) return;//prob
+        if (entry.Length < 2) return;
 
         var languageData = new LanguageData(entry);
-
-        //if (Data == null) Data = new Dictionary<string, LanguageData>();
 
         Data.Add(entry[0], languageData);
     }

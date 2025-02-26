@@ -15,55 +15,10 @@ MonoBehaviour:
   Slots:
   - Item: {fileID: 11400000, guid: 06b8750e6297d7d4b972fea731e20a05, type: 2}
     Amount: 1
-    Name: Apple
+    Name: Berry
   - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
     Amount: 5
     Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
-  - Item: {fileID: 11400000, guid: 5ba4711b40829224c884e6ccb1113a2c, type: 2}
-    Amount: 5
-    Name: Potion
+  - Item: {fileID: 11400000, guid: f7ad51b48856cf6409387d4bf72ac525, type: 2}
+    Amount: 1
+    Name: Sword

@@ -18,4 +18,4 @@ MonoBehaviour:
     Name: Potion
   - Item: {fileID: 11400000, guid: 06b8750e6297d7d4b972fea731e20a05, type: 2}
     Amount: 2
-    Name: 'Apple '
+    Name: Berry

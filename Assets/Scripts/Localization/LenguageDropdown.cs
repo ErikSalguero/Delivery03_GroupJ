@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class LanguageDropdown : MonoBehaviour
 {
-    public Dropdown languageDropdown; // Arrástralo en el Inspector
+    public Dropdown languageDropdown; 
 
     private void Start()
     {

@@ -8,14 +8,13 @@ public class GameItem : MonoBehaviour, ICanBePicked
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Get PlayerInventory component on Player gameObject
         var picker = other.GetComponent<IPickUp>();
 
         if (picker != null)
         {
-            picker.PickUp(this); // Add to player inventory
+            picker.PickUp(this); 
 
-            PickedUp(); // Destroy game object from screen
+            PickedUp(); 
         }
     }
 
