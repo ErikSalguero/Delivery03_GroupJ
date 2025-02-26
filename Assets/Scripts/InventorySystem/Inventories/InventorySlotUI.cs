@@ -11,6 +11,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public Image Image;
     public TextMeshProUGUI AmountText;
+    public TextMeshProUGUI NameText;
 
     private Canvas _canvas;
     private GraphicRaycaster _raycaster;
@@ -25,6 +26,8 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         AmountText.text = slot.Amount.ToString();
         AmountText.enabled = slot.Amount > 1;
+        
+        NameText.text = slot.Name.ToString();
 
         _item = slot.Item;
         _inventory = inventory;

@@ -8,6 +8,7 @@ public class ItemSlot
 {
     public ItemBase Item;
     public int Amount;
+    public string Name;
 
     public ItemSlot(ItemBase item)
     {
