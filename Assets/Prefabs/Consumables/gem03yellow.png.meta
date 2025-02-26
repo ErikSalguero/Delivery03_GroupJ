@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gem03yellow_0: 4549811258697172488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

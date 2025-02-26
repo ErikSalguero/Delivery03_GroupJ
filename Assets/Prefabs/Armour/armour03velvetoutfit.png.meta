@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armour03velvetoutfit_0: 1928395747999366304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

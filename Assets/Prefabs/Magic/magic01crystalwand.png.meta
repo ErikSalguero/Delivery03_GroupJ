@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      magic01crystalwand_0: 8472489121119051378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

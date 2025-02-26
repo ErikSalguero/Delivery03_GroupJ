@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      magic05wand_0: 2580585403738939815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armour07leatherjerkin_0: -5485216532755236323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

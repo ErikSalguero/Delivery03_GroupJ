@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armour01magiciansrobe_0: 3829623801246733686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
