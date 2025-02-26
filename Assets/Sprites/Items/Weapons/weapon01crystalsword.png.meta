@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a0388d170b4f5ef4ea92698bf9fa307f
+guid: 769292a78a0b8e54db878f9584748a57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3010575704154021536
-    second: magic07scroll_0
+      213: 5032174242297145970
+    second: weapon01crystalsword_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magic07scroll_0
+      name: weapon01crystalsword_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ae9587f6a6b7c920800000000000000
-      internalID: 3010575704154021536
+      spriteID: 27aedffcfcfd5d540800000000000000
+      internalID: 5032174242297145970
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      magic07scroll_0: 3010575704154021536
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
