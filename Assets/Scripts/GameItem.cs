@@ -28,4 +28,9 @@ public class GameItem : MonoBehaviour, ICanBePicked
     {
         return Item;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit");
+    }
 }
